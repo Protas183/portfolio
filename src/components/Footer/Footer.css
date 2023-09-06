@@ -1,0 +1,6 @@
+.footerBlock {
+  height: 250px;
+  background-color: grey;
+  z-index: 1111;
+  position: relative;
+}
