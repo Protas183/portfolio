@@ -1,4 +1,5 @@
-import { ContAboutMe, Title, UnderTitle, Paragraph, Img, SectionAboutMe, Describe } from './AboutMe.styled';
+import { ContAboutMe, Title, UnderTitle, Paragraph, Img, SectionAboutMe, Describe, Span } from './AboutMe.styled';
+import Photo_Profile from '../../../Photo/Photo_Profile.jpg'
 
 export const AboutMe = () => {
 
@@ -8,15 +9,18 @@ export const AboutMe = () => {
                 <Describe>
                     <Title>It`s me</Title>
                     <UnderTitle>
-                        I`m a web developer from Kremenchug
+                        Welcome to my portfolio
                     </UnderTitle>
                     <Paragraph>
-                        From 2022 dived into the sea It with his head
+                        Mi name is <Span>Artem</Span>,
                     </Paragraph>
-                </Describe>                
-                <Img src="https://klike.net/uploads/posts/2020-01/1579681624_20.jpg" width={550} />
+                    <Paragraph>
+                        I`m <Span>Frontend Developer</Span>
+                    </Paragraph>
+                </Describe>
+                <Img src={Photo_Profile} width={550} alt="Foto"/>
             </ContAboutMe>
         </SectionAboutMe>
-        
+
     )
 }

@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
 
-export const SectionAboutMe = styled.div`    
+export const SectionAboutMe = styled.div`
     background-color: rgb(240, 240, 240);
 `;
 
 export const ContAboutMe = styled.div`
 margin: 0 auto;
-padding-top: 50px;
-padding-bottom: 50px;
+padding-top: 150px;
+padding-bottom: 150px;
 width: 1200px;
 display: flex;
 justify-content: space-between;
@@ -33,12 +33,17 @@ font-size: 40px;
 
 export const Paragraph = styled.p`
 margin: 0;
-font-size: 25px;
+font-size: 35px;
 `;
 
 
 export const Img = styled.img`
 margin: 0;
-height: 450px;
+// height: 450px;
 `;
 
+export const Span = styled.span`
+color: rgb(71, 71, 71);
+font-weight: bolder;
+font-family: "Barriecito", cursive;
+`;
