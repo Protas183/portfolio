@@ -1,7 +1,8 @@
 import { AboutMe } from "components/AboutComponents/AboutMe/AboutMe";
-import  RandomFact  from "components/AboutComponents/RandomFact/RandomFact";
+import RandomFact from "components/AboutComponents/RandomFact/RandomFact";
+import  HardSkills  from "components/AboutComponents/HardSkills/HardSkills";
 import { Container } from "./About.styled";
-import { HardSkills } from "components/AboutComponents/HardSkills/HardSkills";
+
 
 export const About = () => {
   return (

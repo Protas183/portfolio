@@ -1,8 +1,12 @@
-import {Describe, HardSkillsBlock, Paragraph, SkillsContainer, ListHardSkills, TitleHardSkills, SkillsUl, SkillsLi, Title } from "./HardSkills.styled"
+import React, {Component} from 'react'
+import { Describe, HardSkillsBlock, Paragraph, SkillsContainer, ListHardSkills, TitleHardSkills, SkillsUl, SkillsLi, Title } from "./HardSkills.styled"
 
 
-export const HardSkills = () => {
+const skills = ['HTML', 'CSS', 'SASS', 'GIT', 'BEM', 'JavaScript', 'React', 'SQL', 'RestAPI', 'Node.js'];
 
+class HardSkills extends Component {
+
+  render() {
     return (
       <HardSkillsBlock>
         <SkillsContainer>
@@ -13,21 +17,16 @@ export const HardSkills = () => {
           <ListHardSkills>
             <TitleHardSkills>My Hard skills</TitleHardSkills>
             <SkillsUl>
-              <SkillsLi>HTML</SkillsLi>
-              <SkillsLi>CSS</SkillsLi>
-              <SkillsLi>SASS</SkillsLi>
-              <SkillsLi>GIT</SkillsLi>
-              <SkillsLi>BEM</SkillsLi>
-              <SkillsLi>JavaScript</SkillsLi>
-              <SkillsLi>React</SkillsLi>
-              <SkillsLi>MongoDB</SkillsLi>
-              <SkillsLi>RestAPI</SkillsLi>
-              <SkillsLi>Node.js</SkillsLi>
+              {skills.map((skill, id) =>
+                <SkillsLi value={skill} id={id}>{skill}</SkillsLi>
+              )}
             </SkillsUl>
           </ListHardSkills>
         </SkillsContainer>
       </HardSkillsBlock>
 
     )
+  }
 }
 
+export default HardSkills;
