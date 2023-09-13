@@ -1,10 +1,9 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaTelegram } from 'react-icons/fa'
-import { Container, Title, Span, SocialBlock, SocialUl, SocialLI, LinkToSociable, UnderTitle } from './SocialContact.styled'
+import {Title, Span, SocialBlock, SocialUl, SocialLI, LinkToSociable, UnderTitle } from './SocialContact.styled'
 
 
-export const SocialContact = () => {
+const SocialContact = () => {
 return (
-  <Container>
     <SocialBlock>
       <Title>Contact in <Span>SOCIAL</Span></Title>
       <UnderTitle>Get in touch with me via social media or email.</UnderTitle>
@@ -15,6 +14,7 @@ return (
           <SocialLI><LinkToSociable href='https://www.linkedin.com/in/artem-protas-a63962271/'><FaLinkedin />Linkedin</LinkToSociable></SocialLI>
       </SocialUl>
     </SocialBlock>
-  </Container>
 )
 }
+
+export default SocialContact;
