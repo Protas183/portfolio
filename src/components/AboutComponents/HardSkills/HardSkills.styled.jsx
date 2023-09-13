@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const HardSkillsBlock = styled.div`
-  background-color: rgb(240, 240, 240);
+  background-color: white;
 `;
 
 export const SkillsContainer = styled.div`
@@ -42,6 +42,7 @@ export const TitleHardSkills = styled.h3`
 export const SkillsUl = styled.ul`
 margin: 0;
 padding: 0;
+margin-top: 15px;
 width: 200px;
 display: flex;
 flex-wrap: wrap;
@@ -54,6 +55,12 @@ margin: 5px 10px 5px 0px;
 padding: 5px;
 border: 2px solid black;
 font-size: 17px;
+cursor: default;
+
+&:hover {
+  background-color: black;
+  color: white;
+}
 `;
 
 

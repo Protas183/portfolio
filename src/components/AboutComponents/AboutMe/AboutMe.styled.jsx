@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const SectionAboutMe = styled.div`
-    background-color: rgb(240, 240, 240);
+    background-color: white;
 `;
 
 export const ContAboutMe = styled.div`
@@ -39,7 +39,6 @@ font-size: 35px;
 
 export const Img = styled.img`
 margin: 0;
-// height: 450px;
 `;
 
 export const Span = styled.span`

@@ -37,7 +37,6 @@ export const Logo = styled.span`
 
     &:hover {
     color: rgb(192, 192, 192);
-    font-size: 55px;
 }
 `;
 
@@ -61,7 +60,6 @@ export const NavLi = styled.li`
 
     &:hover {
     color: rgb(192, 192, 192);
-    font-size: 17px;
     }
 
     &:not(:last-child) {
@@ -76,7 +74,7 @@ export const Link = styled(NavLink)`
     color: white;
 
     &.active {
-    color: grey;
+    color: rgb(162, 162, 162);
     }
 
         &:hover {

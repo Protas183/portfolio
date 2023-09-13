@@ -6,7 +6,6 @@ import { Contact } from '../../Pages/Contact/Contact';
 import { Projects } from "Pages/Projects/Projects";
 
 
-
 export default function App() {
     return (
   <Routes>

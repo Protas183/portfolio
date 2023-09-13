@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const SectionRandomFact = styled.div`
-    background-color: white;
+    background-color: rgb(240, 240, 240);
 `;
 
 export const ContainerRandomFact = styled.div`
@@ -31,7 +31,11 @@ export const Title = styled.h2`
 
 `;
 
-export const UnderTitle = styled.h3`
+export const FactsUl = styled.ul`
+  padding: 0;
+`;
+
+export const FactLi = styled.li`
     margin: 0;
     margin-bottom: 15px;
     font-size: 25px;

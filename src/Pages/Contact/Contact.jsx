@@ -1,11 +1,11 @@
 import { Container } from 'Pages/About/About.styled';
-// import SocialContact from 'components/ContactComponents/socialContact/socialContact';
-import EmailContact from 'components/ContactComponents/emailContact/emailContact';
+import EmailContact from 'components/ContactComponents/EmailContact/EmailContact';
+import { SocialContact } from 'components/ContactComponents/SocialContact/SocialContact';
 
 export const Contact = () => {
   return (
     <Container>
-      {/* <SocialContact /> */}
+      <SocialContact />
       <EmailContact />
     </Container>
   );

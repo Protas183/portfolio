@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import styled from 'styled-components';
-import { Container, EmailBlock, Title, FormBlock, NameEmailBlock, FormInput, MessageBlock, ErrorText, Button } from './emailContact.styled';
+import { Container, EmailBlock, Title, FormBlock, NameEmailBlock, FormInput, MessageBlock, ErrorText, Button } from './EmailContact.styled';
 
 const FormError = ({ name }) => {
   return (
