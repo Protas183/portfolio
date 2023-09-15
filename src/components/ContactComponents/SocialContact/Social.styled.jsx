@@ -4,11 +4,16 @@ export const SocialBlock = styled.div`
   width: 1200px;
   margin: 0 auto;
   padding: 40px 0px 40px 0px;
+  display: flex;
+  flex-direction: column;
 
 `;
 
 export const Title = styled.h2`
 margin: 0;
+margin-bottom: 20px;
+font-size: 50px;
+font-family: "Bitter", serif;
 `;
 
 export const Span = styled.span`
@@ -20,25 +25,29 @@ font-family: "Barriecito", cursive;
 export const UnderTitle = styled.h3`
   margin: 0;
   padding: 0;
+  margin-bottom: 15px;
+  font-size: 35px;
+  font-family: "Bitter", serif;
 `;
 
 export const SocialUl = styled.ul`
   margin: 0;
   padding: 0;
   margin-top: 15px;
-  display: grid;
-  grid-template-columns: 150px 150px;
-  gap: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 `;
 
 
 export const SocialLI = styled.li`
-
+  margin: 0;
 `;
 
 export const LinkToSociable = styled.a`
   font-weight: 500;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 0.02em;
   cursor: pointer;
   transition: 250ms;
@@ -52,8 +61,8 @@ export const LinkToSociable = styled.a`
   }
 
   svg {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     margin-right: 15px;
 
       &:hover {

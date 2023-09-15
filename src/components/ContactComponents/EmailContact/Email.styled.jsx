@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   background-color: rgb(240, 240, 240);
+  background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 100%);
 `;
 
 export const EmailBlock = styled.div`
@@ -10,6 +11,7 @@ export const EmailBlock = styled.div`
   padding: 0;
   padding-top: 40px;
   padding-bottom: 40px;
+
 `;
 
 export const Title = styled.h2`
@@ -26,9 +28,7 @@ export const FormBlock = styled.div`
 
 export const NameEmailBlock = styled.div`
   font-size: 20px;
-
-
-`;
+  `;
 
 export const FormInput = styled.div`
 
