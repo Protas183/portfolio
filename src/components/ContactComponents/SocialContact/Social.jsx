@@ -1,8 +1,8 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaTelegram } from 'react-icons/fa'
-import {Title, Span, SocialBlock, SocialUl, SocialLI, LinkToSociable, UnderTitle } from './SocialContact.styled'
+import {Title, Span, SocialBlock, SocialUl, SocialLI, LinkToSociable, UnderTitle } from './Social.styled'
 
 
-const SocialContact = () => {
+const Social = () => {
 return (
     <SocialBlock>
       <Title>Contact in <Span>SOCIAL</Span></Title>
@@ -17,4 +17,4 @@ return (
 )
 }
 
-export default SocialContact;
+export default Social;
