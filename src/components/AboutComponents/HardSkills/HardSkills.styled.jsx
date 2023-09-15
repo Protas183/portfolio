@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-export const HardSkillsBlock = styled.div`
+export const HardSkillsBlock = styled(motion.div)`
   background-color: white;
 `;
 
@@ -14,7 +15,7 @@ export const SkillsContainer = styled.div`
 
   `;
 
-export const Describe = styled.div`
+export const Describe = styled(motion.div)`
   width: 500px;
   font-family: "Bitter",serif;
 `;
@@ -30,7 +31,7 @@ margin: 0;
 font-family: "Bitter",serif;
 `;
 
-export const ListHardSkills = styled.div`
+export const ListHardSkills = styled(motion.div)`
   font-family: "Bitter",serif;
 `;
 

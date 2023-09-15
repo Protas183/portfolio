@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {animationBottom} from "../animation"
 import { Board } from './ProjectBoard.styled';
 
 
@@ -22,7 +23,12 @@ export default function ProjectBoard({ events }) {
 
 
   return (
-    <Board>
+    <Board
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={animationBottom}
+    >
       <Slider {...settings}>
         {events.map(event => (
         <ProjectCard

@@ -32,7 +32,7 @@
     "make": "Team",
     "position": "developer",
     "img": "https://github.com/Protas183/for-images-url/blob/main/Images/ImgPortfolioProject/Filmoteka.jpg?raw=true",
-    "technologies": ["HTML", "SASS", "MobileFirst", "JavaScript", "RestAPI"],
+    "technologies": ["HTML", "SASS", "MobileFirst", "JavaScript", "RestAPI", "Parcel"],
     "describe": "",
     "linkGit": "https://github.com/AntonKobyshev/Filmoteka-lighter-project",
     "linkSite": "https://antonkobyshev.github.io/Filmoteka-lighter-project/"

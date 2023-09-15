@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-export const SocialBlock = styled.div`
+export const SocialBlock = styled(motion.div)`
   width: 1200px;
   margin: 0 auto;
   padding: 40px 0px 40px 0px;
@@ -9,7 +10,7 @@ export const SocialBlock = styled.div`
 
 `;
 
-export const Title = styled.h2`
+export const Title = styled(motion.h2)`
 margin: 0;
 margin-bottom: 20px;
 font-size: 50px;
@@ -22,7 +23,7 @@ font-weight: bolder;
 font-family: "Barriecito", cursive;
 `;
 
-export const UnderTitle = styled.h3`
+export const UnderTitle = styled(motion.h3)`
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
@@ -41,7 +42,7 @@ export const SocialUl = styled.ul`
 `;
 
 
-export const SocialLI = styled.li`
+export const SocialLI = styled(motion.li)`
   margin: 0;
 `;
 
@@ -69,7 +70,6 @@ export const LinkToSociable = styled.a`
       color: rgb(160, 160, 160);
       }
   }
-
 `;
 
 

@@ -1,11 +1,12 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   background-color: rgb(240, 240, 240);
   background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 100%);
 `;
 
-export const EmailBlock = styled.div`
+export const EmailBlock = styled(motion.div)`
   width: 1200px;
   margin: 0 auto;
   padding: 0;

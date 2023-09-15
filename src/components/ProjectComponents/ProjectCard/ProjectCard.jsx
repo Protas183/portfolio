@@ -6,7 +6,7 @@ export default function ProjectCard({ title, make, position, img, technologies, 
 
 
   return (
-      <Project>
+    <Project>
       <Title>{title}</Title>
       <MakePositionsUL>
         <MakePositionsLI>{make}</MakePositionsLI>

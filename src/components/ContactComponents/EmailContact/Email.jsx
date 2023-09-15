@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import styled from 'styled-components';
+import { animationBottom } from '../animation';
 import { Container, EmailBlock, Title, FormBlock, NameEmailBlock, FormInput, MessageBlock, ErrorText, Button } from './Email.styled';
 
 const FormError = ({ name }) => {
@@ -42,60 +43,64 @@ class Email extends Component {
     console.log(values);
     resetForm();
   }
-  render() {
-    return (
-      <Container>
-        <EmailBlock>
-          <Title>Send me an email</Title>
-          <Formik
-            initialValues={initialValues}
-            validationSchema={validationSchema}
-            onSubmit={this.handleSubmit}>
-            <Form autoComplete='off'>
-              <FormBlock>
-                <NameEmailBlock>
-                  <FormInput>
-                    <label htmlFor='name'>Name</label>
-                    <div>
-                      <Input type="text" name="name" placeholder="Full name" />
-                      <FormError name="name" />
-                    </div>
-                  </FormInput>
-                  <FormInput>
-                    <label htmlFor='email'>Email</label>
-                    <div>
-                      <Input type="text" name="email" placeholder="Email" />
-                      <FormError name="email" />
-                    </div>
-                  </FormInput>
-                </NameEmailBlock>
-                <MessageBlock>
-                  <label htmlFor='message'>Message</label>
-                  <div>
-                    <Field type="text" name="message" as="textarea" placeholder="Write your message"
-                    style={{
-                      width: '500px',
-                      height: '160px',
-                      margin: '10px 0px 0px 0px',
-                      padding: '10px',
-                      borderRadius: '5px',
-                      border: '2px solid grey',
-                      fontSize: '20px',
-                      boxSizing: 'border-box',
-                      resize: 'none'
-                    }}
-                    />
-                    <FormError name="message" />
-                  </div>
-                </MessageBlock>
-              </FormBlock>
-              <Button type="submit">Send email</Button>
-            </Form>
-          </Formik>
-        </EmailBlock>
-      </Container>
-    )
-  }
+render() {
+return (
+  <Container
+    initial="hidden"
+    whileInView="visible"
+    viewport={{once: true}}
+  >
+    <EmailBlock variants={animationBottom}>
+      <Title>Send me an email</Title>
+      <Formik
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={this.handleSubmit}>
+        <Form autoComplete='off'>
+          <FormBlock>
+            <NameEmailBlock>
+              <FormInput>
+                <label htmlFor='name'>Name</label>
+                <div>
+                  <Input type="text" name="name" placeholder="Full name" />
+                  <FormError name="name" />
+                </div>
+              </FormInput>
+              <FormInput>
+                <label htmlFor='email'>Email</label>
+                <div>
+                  <Input type="text" name="email" placeholder="Email" />
+                  <FormError name="email" />
+                </div>
+              </FormInput>
+            </NameEmailBlock>
+            <MessageBlock>
+              <label htmlFor='message'>Message</label>
+              <div>
+                <Field type="text" name="message" as="textarea" placeholder="Write your message"
+                style={{
+                  width: '500px',
+                  height: '160px',
+                  margin: '10px 0px 0px 0px',
+                  padding: '10px',
+                  borderRadius: '5px',
+                  border: '2px solid grey',
+                  fontSize: '20px',
+                  boxSizing: 'border-box',
+                  resize: 'none'
+                }}
+                />
+                <FormError name="message" />
+              </div>
+            </MessageBlock>
+          </FormBlock>
+          <Button type="submit">Send email</Button>
+        </Form>
+      </Formik>
+    </EmailBlock>
+  </Container>
+)
+}
 }
 
 export default Email;

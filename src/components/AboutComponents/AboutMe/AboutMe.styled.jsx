@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from 'framer-motion';
 
-export const SectionAboutMe = styled.div`
+export const SectionAboutMe = styled(motion.div)`
     background-color: white;
 `;
 
@@ -13,31 +14,31 @@ display: flex;
 justify-content: space-between;
 `;
 
-export const Describe = styled.div`
+export const Describe = styled(motion.div)`
     width: 550px;
     max-height: 450px;
     font-family: "Bitter", serif;
 `;
 
-export const Title = styled.h1`
+export const Title = styled(motion.h1)`
 margin: 0;
 margin-bottom: 15px;
 font-size: 55px;
 `;
 
-export const UnderTitle = styled.h3`
+export const UnderTitle = styled(motion.h3)`
 margin: 0;
 margin-bottom: 15px;
 font-size: 40px;
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled(motion.p)`
 margin: 0;
 font-size: 35px;
 `;
 
 
-export const Img = styled.img`
+export const Img = styled(motion.img)`
 margin: 0;
 `;
 

@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-export const SectionRandomFact = styled.div`
+export const SectionRandomFact = styled(motion.div)`
     background-color: rgb(240, 240, 240);
 `;
 
@@ -12,11 +13,11 @@ export const ContainerRandomFact = styled.div`
     display: flex;
 `;
 
-export const Img = styled.img`
+export const Img = styled(motion.img)`
 
 `;
 
-export const Describe = styled.div`
+export const Describe = styled(motion.div)`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
