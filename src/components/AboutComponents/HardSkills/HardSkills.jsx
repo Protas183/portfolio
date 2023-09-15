@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import { Describe, HardSkillsBlock, Paragraph, SkillsContainer, ListHardSkills, TitleHardSkills, SkillsUl, SkillsLi, Title } from "./HardSkills.styled"
 
 
-const skills = ['HTML', 'CSS', 'SASS', 'GIT', 'BEM', 'JavaScript', 'React', 'SQL', 'RestAPI', 'Node.js'];
+const skills = ['HTML', 'CSS', 'SASS', 'GIT', 'BEM', 'JavaScript', 'React', 'MySQL', 'RestAPI', 'Node.js'];
 
 class HardSkills extends Component {
 

@@ -1,7 +1,12 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-    margin: 0 auto;
-    padding: 0;
-    
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+`;
+
+export const BlockOutlet = styled.div`
+  flex-grow: 1;
 `;

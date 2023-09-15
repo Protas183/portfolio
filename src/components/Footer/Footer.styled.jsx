@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const FooterBlock = styled.footer`
   background-color: rgb(219, 219, 219);
   border-top: 1px solid black;
+  margin-top: auto;
 `;
 
 export const FooterContainer = styled.div`
