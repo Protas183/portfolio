@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import styled from 'styled-components';
-import { Container, EmailBlock, Title, FormBlock, NameEmailBlock, FormInput, MessageBlock, ErrorText, Button } from './EmailContact.styled';
+import { Container, EmailBlock, Title, FormBlock, NameEmailBlock, FormInput, MessageBlock, ErrorText, Button } from './Email.styled';
 
 const FormError = ({ name }) => {
   return (
@@ -36,7 +36,7 @@ const Input = styled(Field)`
   resize: none;
 `;
 
-class EmailContact extends Component {
+class Email extends Component {
 
   handleSubmit = (values, { resetForm }) => {
     console.log(values);
@@ -98,4 +98,4 @@ class EmailContact extends Component {
   }
 }
 
-export default EmailContact;
+export default Email;

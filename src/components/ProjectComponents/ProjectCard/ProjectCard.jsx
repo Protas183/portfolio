@@ -29,11 +29,11 @@ export default function ProjectCard({ title, make, position, img, technologies, 
 
 
 ProjectCard.propTypes = {
-  title: PropTypes.string,
-  make: PropTypes.string,
-  img: PropTypes.object,
-  technologies: PropTypes.array,
-  describe: PropTypes.string,
-  linkGit: PropTypes.string,
-  linkSite: PropTypes.string
+  title: PropTypes.string.isRequired,
+  make: PropTypes.string.isRequired,
+  img: PropTypes.object.isRequired,
+  technologies: PropTypes.array.isRequired,
+  describe: PropTypes.string.isRequired,
+  linkGit: PropTypes.string.isRequired,
+  linkSite: PropTypes.string.isRequired
 }
